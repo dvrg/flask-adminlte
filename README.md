@@ -53,7 +53,10 @@ $ # virtualenv --no-site-packages env
 $ # .\env\Scripts\activate
 $
 $ # Install modules - SQLite Database
-$ pip3 install -r requirements.txt
+$ # pip3 install -r requirements.txt
+$ 
+$ # Install modules - Mysql Database
+$ pip3 install -r requirements-mysql.txt
 $
 $ # OR with PostgreSQL connector
 $ # pip install -r requirements-pgsql.txt
