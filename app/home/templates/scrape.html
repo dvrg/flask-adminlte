@@ -1,0 +1,163 @@
+{% extends "base_site.html" %}
+
+{% block title %} General Form Elements {% endblock title %}
+
+{% block stylesheets %}
+<!-- Specific CSS goes HERE -->
+{% endblock %}
+
+{% block content %}
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Scrape
+        <small>Scrape</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Scrape</li>
+      </ol>
+    </section>
+
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title">Scrape</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- textarea -->
+              <div class="form-group">
+                <label>Title</label>
+                <textarea class="form-control" rows="6"></textarea>
+              </div>
+              <!-- end textarea -->
+              <!-- select -->
+              <div class="form-group">
+                <label>Time Out</label>
+                <select class="form-control">
+                  <option>00:00</option>
+                  <option>01:00</option>
+                  <option>02:00</option>
+                  <option>03:00</option>
+                  <option>04:00</option>
+                  <option>05:00</option>
+                  <option>06:00</option>
+                  <option>07:00</option>
+                  <option>08:00</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>12:00</option>
+                  <option>13:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                  <option>18:00</option>
+                  <option>19:00</option>
+                  <option>20:00</option>
+                  <option>21:00</option>
+                  <option>22:00</option>
+                  <option>23:00</option>
+                </select>
+              </div>
+              <!-- endselect -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+              <!-- checkbox -->
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Title
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Price
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Image
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Category
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Product Review
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal">
+                  </label>
+                  Product Disscusion
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Condition
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  URL
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal">
+                  </label>
+                  Short Location
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="minimal" checked>
+                  </label>
+                  Insurance
+                </div>
+            </div> <!-- end checkbox -->
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <button type="submit" class="btn btn-success">Run <i class="fa fa-play-circle"></i></button>
+          <button type="submit" class="btn btn-danger">Abort <i class="fa fa-stop-circle"></i></button>
+        </div>
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+{% endblock content %}
+  
+{% block javascripts %}
+<script>
+  $(function(){
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass   : 'iradio_minimal-blue'
+      })
+  })
+</script>
+{% endblock %}

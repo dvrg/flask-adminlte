@@ -18,11 +18,11 @@ class Config(object):
 
     # mysql
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{}:{}@{}:{}/{}'.format(
-        environ.get('DATABASE_USER', 'root'),
-        environ.get('DATABASE_PASSWORD', 'toor'),
-        environ.get('DATABASE_HOST', 'localhost'),
-        environ.get('DATABASE_PORT', 3306),
-        environ.get('DATABASE_NAME', 'appseed')
+        environ.get('DATABASE_USER'),
+        environ.get('DATABASE_PASSWORD'),
+        environ.get('DATABASE_HOST'),
+        environ.get('DATABASE_PORT'),
+        environ.get('DATABASE_NAME')
     )
 
     # For 'in memory' database, please use:
@@ -48,11 +48,11 @@ class ProductionConfig(Config):
     # PostgreSQL database
     #SQLALCHEMY_DATABASE_URI = 'postgresql://{}:{}@{}:{}/{}'.format(
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{}:{}@{}:{}/{}'.format(
-        environ.get('DATABASE_USER', 'root'),
-        environ.get('DATABASE_PASSWORD', 'toor'),
-        environ.get('DATABASE_HOST', 'localhost'),
-        environ.get('DATABASE_PORT', 3306),
-        environ.get('DATABASE_NAME', 'appseed')
+        environ.get('DATABASE_USER'),
+        environ.get('DATABASE_PASSWORD'),
+        environ.get('DATABASE_HOST'),
+        environ.get('DATABASE_PORT'),
+        environ.get('DATABASE_NAME')
     )
 
 
