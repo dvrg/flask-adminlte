@@ -35,7 +35,7 @@ class Config(object):
     #  will add the theme name to the static URL:
     #    /static/<DEFAULT_THEME>/filename
     # DEFAULT_THEME = "themes/dark"
-    DEFAULT_THEME = None
+    DEFAULT_THEME = "None"
 
 class ProductionConfig(Config):
     DEBUG = False
